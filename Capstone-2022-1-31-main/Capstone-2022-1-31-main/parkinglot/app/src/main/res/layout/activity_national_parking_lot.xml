@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtParkingLot"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="-"
+            android:font="@font/cafe24"
+            />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="-"
+            android:font="@font/cafe24"
+            />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_magnify_24_blue"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        />
+
+    <LinearLayout
+        android:id="@+id/layMap"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btnBookmarkAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_bottom_selector"
+        android:stateListAnimator="@null"
+        android:text="즐겨찾기 추가"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:font="@font/cafe24"/>
+
+</LinearLayout>

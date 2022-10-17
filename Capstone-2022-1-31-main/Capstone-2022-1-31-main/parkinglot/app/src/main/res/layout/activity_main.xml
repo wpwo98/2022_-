@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity"
+    android:fontFamily="@font/cafe24">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_margin="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_parking_24_black"
+        android:text="주차 공간 찾기" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="70dp"
+        android:text="주차 공간 찾기"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/cafe24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:id="@+id/layNationalParkingLot"
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="24dp"
+            android:gravity="center"
+            android:background="#f5f5dc"
+            android:fontFamily="@font/cafe24"
+
+            >
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_parking_24_black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="주차장 검색"
+                android:fontFamily="@font/cafe24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layDatabase"
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="24dp"
+            android:padding="24dp"
+            android:gravity="center"
+            android:background="#f5f5dc">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_town_hall_24_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="주차 현황"
+                android:font="@font/cafe24"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

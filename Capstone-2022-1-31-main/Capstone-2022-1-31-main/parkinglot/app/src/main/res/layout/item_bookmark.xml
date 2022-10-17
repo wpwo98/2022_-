@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_item_selector">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtParkingLotName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="20sp"
+            android:text="-"
+            android:fontFamily="@font/cafe24"
+            />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:text="-"
+            android:fontFamily="@font/cafe24"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_delete_24_blue"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        />
+
+</LinearLayout>

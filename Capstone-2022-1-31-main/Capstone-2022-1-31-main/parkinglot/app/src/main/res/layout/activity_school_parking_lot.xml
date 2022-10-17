@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="1"
+    android:background="@drawable/pnuparking"
+
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="주차 현황"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cafe24">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="54dp"
+        android:layout_height="124dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="240dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장 1"
+            android:textColor="@color/teal_200"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_noneborder"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:background="@color/red_icon_color" />
+
+            <FrameLayout
+                android:id="@+id/layParking1"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/blue_icon_color">
+
+                <ImageView
+                    android:id="@+id/imgParking1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_parking_24_white"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/red_icon_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장 4"
+            android:textColor="@color/teal_200"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_noneborder"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <FrameLayout
+                android:id="@+id/layParking4"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:background="@color/red_icon_color">
+
+                <ImageView
+                    android:id="@+id/imgParking4"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_parking_24_white"
+                    android:visibility="gone"
+
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/red_icon_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="240dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장 3"
+            android:textColor="@color/teal_200"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_noneborder"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <FrameLayout
+                android:id="@+id/layParking3"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:background="@color/blue_icon_color">
+
+                <ImageView
+                    android:id="@+id/imgParking3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_parking_24_white"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/blue_icon_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장 2"
+            android:textColor="@color/teal_200"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_noneborder"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:background="@color/red_icon_color" />
+
+            <FrameLayout
+                android:id="@+id/layParking2"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/blue_icon_color">
+
+                <ImageView
+                    android:id="@+id/imgParking2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_parking_24_white"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/red_icon_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+<Button
+    android:id="@+id/btnGetDirections"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/white"
+    android:text="길 안내"
+    android:stateListAnimator="@null"
+    android:background="@drawable/button_bottom_selector"
+    />
+
+</LinearLayout>

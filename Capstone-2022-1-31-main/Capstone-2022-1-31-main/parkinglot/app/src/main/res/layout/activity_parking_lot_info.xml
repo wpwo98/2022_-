@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtParkingLotName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textSize="20sp"
+        android:text="-"
+        android:fontFamily="@font/cafe24"
+        />
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="20sp"
+        android:text="-"
+        android:fontFamily="@font/cafe24"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_line"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="주차장관리번호"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPrkplceNo"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="주차장구분"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPrkplceSe"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="주차장유형"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPrkplceType"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="소재지도로명주소"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtRdnmadr"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="소재지지번주소"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLnmadr"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="주차구획수"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPrkcmprt"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="급지구분"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtFeedingSe"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="부제시행구분"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtEnforceSe"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="운영요일"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtOperDay"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="평일운영시작시각"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtWeekdayOperOpenHhmm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="평일운영종료시각"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtWeekdayOperColseHhmm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="토요일운영시작시각"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSatOperOperOpenHhmm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="토요일운영종료시각"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSatOperCloseHhmm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="공휴일운영시작시각"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtHolidayOperOpenHhmm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="공휴일운영종료시각"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtHolidayCloseOpenHhmm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="요금정보"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtParkingchrgeInfo"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="주차기본시간"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtBasicTime"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="주차기본요금"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtBasicCharge"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="추가단위시간"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtAddUnitTime"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="추가단위요금"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtAddUnitCharge"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="1일주차권요금적용시간"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtDayCmmtktAdjTime"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="1일주차권요금"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtDayCmmtkt"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="월정기권요금"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMonthCmmtkt"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="결제방법"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMetpay"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="특이사항"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSpcmnt"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="관리기관명"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+                <TextView
+                    android:id="@+id/txtInstitutionNm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="전화번호"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="위도"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLatitude"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="경도"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLongitude"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="데이터기준일자"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtReferenceDate"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="제공기관코드"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtInsttCode"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="제공기관기관명"
+                    android:fontFamily="@font/cafe24"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtInsttNm"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    android:text="-"
+                    android:fontFamily="@font/cafe24"
+                    />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCheckParkingLot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:background="@color/teal_200"
+        android:stateListAnimator="@null"
+        android:text="주차 공간 확인"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cafe24"
+        />
+
+    <Button
+        android:id="@+id/btnGetDirections"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="길찾기"
+        android:stateListAnimator="@null"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/cafe24"
+        />
+
+</LinearLayout>

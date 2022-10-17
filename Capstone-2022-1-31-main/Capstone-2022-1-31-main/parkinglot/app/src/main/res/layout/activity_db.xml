@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:fontFamily="@font/cafe24">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차 상태 : "
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:fontFamily="@font/cafe24"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 주차 중 "
+            android:textStyle="bold"
+            android:fontFamily="@font/cafe24"
+            android:textColor="@color/black"
+            android:padding="3dp"
+            android:background="@color/red_icon_color">
+        </TextView>
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:text="  ">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비어있음"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:fontFamily="@font/cafe24"
+            android:background="@color/blue_icon_color">
+
+        </TextView>
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:text="  ">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   그늘   "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:fontFamily="@font/cafe24"
+            android:background="@color/grey">
+        </TextView>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="6"
+        android:fontFamily="@font/cafe24"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_margin="2dp"
+        android:id="@+id/button_main_all"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:text="전체보기"
+        android:fontFamily="@font/cafe24"
+        android:textColor="@color/black"
+        android:background="#f5f5dc"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/textView_main_result" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBlock"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="56dp"
+    android:paddingRight="56dp"
+    android:gravity="center"
+    android:background="@color/popup_transparent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_round_no_border">
+
+        <LinearLayout
+            android:id="@+id/layBody"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                android:fontFamily="@font/cafe24"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="@string/default_text"
+                android:fontFamily="@font/cafe24"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="확인"
+                android:stateListAnimator="@null"
+                android:background="@drawable/button_normal_selector"
+                android:fontFamily="@font/cafe24"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:font="@font/cafe24"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <Spinner
+                android:id="@+id/spSection"
+                android:layout_width="0px"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:popupElevation="5dp"
+                android:background="@drawable/spinner_background"
+                />
+
+            <Spinner
+                android:id="@+id/spType"
+                android:layout_width="0px"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:spinnerMode="dropdown"
+                android:popupElevation="5dp"
+                android:background="@drawable/spinner_background"
+                />
+
+            <Spinner
+                android:id="@+id/spChargeInfo"
+                android:layout_width="0px"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:spinnerMode="dropdown"
+                android:popupElevation="5dp"
+                android:background="@drawable/spinner_background"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/default_line"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editKeyword"
+                android:layout_width="0px"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColorHint="@color/sub_text_color"
+                android:inputType="text"
+                android:background="@drawable/edit_normal_border"
+                android:font="@font/cafe24"
+                />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="검색"
+                android:stateListAnimator="@null"
+                android:background="@drawable/button_normal_selector"
+                android:font="@font/cafe24"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/default_line"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+            <LinearLayout
+                android:id="@+id/layNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="32dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/sub_text_color"
+                    android:text="@string/msg_data_empty"
+                    android:font="@font/cafe24"
+                    />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layLoading"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/popup_transparent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</FrameLayout>

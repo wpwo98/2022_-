@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:fontFamily="@font/cafe24">
+
+    <TextView
+        android:id="@+id/textView_park_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/cafe24"/>
+
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/cafe24"
+        >
+        <FrameLayout
+            android:id="@+id/frameView_park_1st"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/blue_icon_color">
+        <TextView
+            android:id="@+id/textView_park_1st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/cafe24"
+            />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/cafe24"
+        >
+        <FrameLayout
+            android:id="@+id/frameView_park_2nd"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/blue_icon_color"
+            android:fontFamily="@font/cafe24">
+        <TextView
+            android:id="@+id/textView_park_2nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/cafe24"
+            android:gravity="center"
+            />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/cafe24"
+        >
+        <FrameLayout
+            android:id="@+id/frameView_park_3rd"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/blue_icon_color">
+        <TextView
+            android:id="@+id/textView_park_3rd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/cafe24"
+            />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/cafe24"
+        >
+        <FrameLayout
+            android:id="@+id/frameView_park_4th"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/blue_icon_color">
+            <TextView
+                android:id="@+id/textView_park_4th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:fontFamily="@font/cafe24"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:background="@color/black" />
+
+</LinearLayout>

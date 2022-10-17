@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#f8f8d9</color>
+    <color name="purple_500">#f5f5dc</color>
+    <color name="purple_700">#e0e094</color>
+    <color name="teal_200">#f5f5dc</color>
+    <color name="teal_700">#e0e094</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2979FF</color>
+    <color name="default_button">#f5f5dc</color>
+    <color name="pressed_button">#e0e094</color>
+    <color name="default_list">#FFFFFF</color>
+    <color name="default_line">#DDDDDD</color>
+    <color name="pressed_list">#D6D6D6</color>
+    <color name="sub_text_color">#999999</color>
+    <color name="border_color">#CCCCCC</color>
+    <color name="parkinglot_border">#444444</color>
+    <color name="red_icon_color">#D93434</color>
+    <color name="blue_icon_color">#2979FF</color>
+    <color name="window_background_color">#FFFFFF</color>
+    <color name="info_background_color">#EEEEEE</color>
+    <color name="title_background_color">#DDDDDD</color>
+    <color name="popup_transparent">#66000000</color>
+    <color name="grey">#808080</color>
+</resources>

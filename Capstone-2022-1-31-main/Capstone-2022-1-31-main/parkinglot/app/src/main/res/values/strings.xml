@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">여기 댈래?</string>
+
+    <string name="open_api_key">%2FP51PZP06kg7OSNU06tcoJZd2QiMH3iq3HoyQr%2BG0O03AM57H%2BoTY9uVWxI4dodbfCqRhFIE6Fb%2B75p2TxSe%2Bw%3D%3D</string>
+    <string name="tmap_api_key">l7xxce79a225fcc643bd84ca6eb97d9983cd</string>
+
+
+    <string name="msg_back_press_end">\'뒤로\' 버튼을 한번 더 누르면 종료됩니다.</string>
+
+
+    <!--    Title    -->
+    <string name="title_parking_lot_find">주차장 찾기</string>
+    <string name="title_parking_lot_search">주차장 검색</string>
+    <string name="title_parking_lot_info">주차장 정보</string>
+    <string name="title_school_parking_lot">주차 공간 현황</string>
+    <string name="title_history">내역</string>
+    <string name="title_bookmark">즐겨찾기</string>
+
+    <!--    Menu    -->
+    <string name="menu_bookmark">즐겨찾기</string>
+    <string name="menu_history">내역</string>
+
+    <!--    Message    -->
+
+    <string name="msg_parking_lot_check_empty">주차장을 입력하세요.</string>
+    <string name="msg_parking_lot_check_length">주차장을 2자리 이상 입력하세요.</string>
+    <string name="msg_parking_lot_location_empty">주차장 위치정보가 없습니다.</string>
+    <string name="msg_parking_lot_empty">즐겨찾기에 추가할 주차장이 없습니다.</string>
+    <string name="msg_data_empty">검색결과 또는 주차장이 없습니다.</string>
+    <string name="msg_history_empty">내역이 없습니다.</string>
+    <string name="msg_bookmark_empty">즐겨찾기가 없습니다.</string>
+    <string name="msg_bookmark_add">즐겨찾기에 추가했습니다.</string>
+    <string name="msg_bookmark_exist">이미 즐겨찾기에 존재합니다.</string>
+    <string name="msg_qr_code_scan_failure">QR 코드 인식을 실패하였습니다.</string>
+    <string name="msg_location_disable">위치 설정이 되어있지 않습니다.</string>
+    <string name="msg_error">일시적인 장애가 발생했습니다.</string>
+    <string name="default_text">-</string>
+
+    <!--    Dialog    -->
+    <string name="dialog_title_location_setting">위치서비스</string>
+    <string name="dialog_title_delete">삭제</string>
+    <string name="dialog_msg_location_setting">앱을 사용하기 위해 위치 서비스가 필요합니다.\n위치 설정을 하시겠습니까?</string>
+    <string name="dialog_msg_delete">삭제하시겠습니까?</string>
+    <string name="dialog_ok">확인</string>
+    <string name="dialog_cancel">취소</string>
+    <string name="dialog_allow">수락</string>
+    <string name="dialog_deny">거부</string>
+
+    <string name="permission_rationale_app_use">앱을 이용하기 위해 권한이 필요합니다.</string>
+
+    <string-array name="parking_lot_section">
+        <item>주차장구분</item>
+        <item>공영</item>
+        <item>민영</item>
+    </string-array>
+
+    <string-array name="parking_lot_type">
+        <item>주차장유형</item>
+        <item>노외</item>
+        <item>노상</item>
+        <item>부설</item>
+    </string-array>
+
+    <string-array name="parking_charge_info">
+        <item>요금정보</item>
+        <item>무료</item>
+        <item>유료</item>
+        <item>혼합</item>
+    </string-array>
+    
+</resources>
